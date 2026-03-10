@@ -75,7 +75,7 @@ Data assimilation requires spatial correlation data and inverse observation
 models for the respective dynamical system. Downloading these requires
 [gsutil](https://cloud.google.com/storage/docs/gsutil):
 ```
-gsutil cp -r gs://gresearch/jax-cfd/projects/invobs-data-assimilation/invobs-da-data /data
+gcloud storage cp --recursive gs://gresearch/jax-cfd/projects/invobs-data-assimilation/invobs-da-data /data
 ```
 
 This downloads into `/data/invobs-da-data/` and all
